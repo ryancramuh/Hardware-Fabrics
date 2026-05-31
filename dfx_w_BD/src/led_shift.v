@@ -46,5 +46,10 @@ module led_shift(
             led <= (led == 16'd0) ? ({1'b1, led[15:1]}) : (led >> 1);
         else if(btn[1] && en)
             led <= (led == 16'd0) ? ({led[14:0], 1'b1}) : (led << 1);
+        else if(btn[2] && en)
+            led <= led ^ 16'hFFFF;
+        else if(btn[3] && en)
+            led <= led >>> 1;
+            
             
 endmodule

@@ -45,7 +45,12 @@ module led_count(
         else if(btn[0])
             max_cnt <= max_cnt - 1;
         else if(btn[1])
-            max_cnt <= max_cnt + 1; 
+            max_cnt <= max_cnt + 1;
+        else if(btn[2])
+            max_cnt <= 27'd33333333;
+        else if(btn[3])
+            max_cnt <= 27'd133333333;    
+              
             
     always@(posedge clk)
         if(rst)
