@@ -18,4 +18,6 @@ DFX allows users to flash partial bitstreams into reconfigurable zones on the FP
 
  Biggest Reason: You ran out of area
 
-## [How to do DFX in Xilinx with RTL](dfx_w_RTL.md)
+## [How to do DFX in Vivado with RTL](dfx_w_RTL/dfx_w_RTL.md) 
+
+## [How to do DFX in Vivado with Block Design](dfx_w_BD/dfx_w_BD.md)
